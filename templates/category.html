@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+
+{% block cnananical %}
+<link rel="canonical" href="https://didiprice.com/show_records/{{categroy}}/{{pagenum}}">
+<title>{{catedata2[categroy]}}｜鳥鳥比價｜最優質的情趣比價平台</title>
+{% endblock cnananical %}
+
+
+
+{% block breadcrumb %}            
+<div class="bread-bar">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/show_records/1">所有商品</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><h1 style="width: 200px;font-size: 17px;margin-top: 3px;">{{catedata2[categroy]}}</h1></li>
+        </ol>
+      </nav>
+</div>
+{% endblock breadcrumb %}
+
+
+
+{% block catagory %}
+
+<a href="/show_records/1" class="btn btn-primary categroy-name">所有商品</a>
+
+{% for i in catedata2.keys() %}
+{% if i == categroy %}
+<a href="/show_records/{{i}}/1" class="btn btn-primary categroy-name active">{{catedata2[i]}}<a>
+{%else%}
+<a href="/show_records/{{i}}/1" class="btn btn-primary categroy-name">{{catedata2[i]}}<a></a>
+{%endif%}
+{% endfor %}
+
+
+{% endblock catagory %}

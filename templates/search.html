@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{%block pagination%}
+            <div id="pagebar" class="product-list">
+                <ul class="pagination">
+                    <li><a href="/search/1/{{searcha}}">«</a></li>
+
+                {%for a in pagebar%}
+                    {% if  a[0]|int == pagenum %}
+                    <li><a class="active" href="/search/{{a}}">{{a[0]}}</a></li>
+                    {% else %}
+                    <li><a href="/search/{{a}}">{{a[0]}}</a></li>
+                    {% endif %}
+                {%endfor%}
+                    <li><a href="/search/{{maxpagenum+1}}/{{searcha}}">»</a></li>
+                </ul>
+            </div>
+{%endblock pagination%}

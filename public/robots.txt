@@ -1,0 +1,6 @@
+User-agent: *
+Allow:/ 
+
+Sitemap: https://didiprice.com/public/sitemap.xml
+
+

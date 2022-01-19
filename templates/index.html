@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    
+    
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta name="description" content="彙整了各大情趣平台的資訊情報，並且充分提供各網站平台的商品價格，供使用者參考。">
+    <meta name="Author" content="鳥鳥比價｜didiprice.com">
+    <meta name="Publisher" content="鳥鳥比價｜didiprice.com">
+    {% block cnananical %}
+    <title>鳥鳥比價｜最優質的情趣比價平台</title>
+    <link rel="canonical" href="https://didiprice.com/show_records/{{pagenum}}">
+    {% endblock cnananical %}
+
+
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384–5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/67/Font_Awesome_5_solid_kiwi-bird.svg" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/public/css/index.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    
+    function over18() {
+        document.getElementById("End").setAttribute("style", "display:none;");
+        document.cookie = 'username=is_adult_qualification_passed; ;max-age=2592000; path=/';
+    };
+
+    function overcookie(){
+        if(document.cookie!=="username=is_adult_qualification_passed"){
+            document.getElementById("End").setAttribute("style", "display:flex;");
+        };
+    };    
+
+    window.onload = function () {
+      overcookie();
+    };
+
+    </script>
+    <script async defer src='https://cdn.affiliates.one/production/adlinks/5245f26e993b3a9ec972e17da09c8cc3fb8a55041c51b1f91b5f86271b2e40e3.js'></script>
+    <style> 
+        .adult-tips{
+        display:none;    
+        position:fixed;
+        z-index:1500;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color:hsla(0,0%,100%,.9)}
+        
+        .adult-tips__container{position:absolute;
+        display:flex;
+        top:-250px;
+        right:0;
+        bottom:0;
+        left:0;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+        flex-direction:column;
+        -webkit-box-pack:center;
+        -ms-flex-pack:center;
+        justify-content:center;
+        border-radius:40px;
+        margin:auto;
+        max-width:380px;
+        width:90%;
+        height:210px;
+        padding:0 5px;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+        -webkit-box-shadow:1px 2px 15px 0;
+        box-shadow:1px 2px 15px 0;
+        background-color:#fff}
+        
+        .adult-tips__info{margin-bottom:20px;
+        text-align:center}
+        
+        .adult-tips__info-title{margin-bottom:10px;
+        font-weight:700;
+        font-size:22px}
+        
+        .adult-tips__info-desc{font-size:16px}
+        
+        .adult-tips__button{
+        display:flex;
+        -webkit-box-pack:space-evenly;
+        -ms-flex-pack:space-evenly;
+        justify-content:space-evenly;
+        padding:0 25px}
+        
+        .adult-tips__button-over-18,.adult-tips__button-under-18{border:none;
+        border-radius:10px;
+        padding:10px 16px;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+        font-size:16px;
+        color:#fff;
+        background-color:#009eff}
+        
+        @media (max-width:425px){
+        .adult-tips__button{padding:0}}
+        </style>
+</head>
+
+<body>
+
+    <div class="adult-tips" id = "End">
+        <div class="adult-tips__container">
+            <div class="adult-tips__info">
+                <p class="adult-tips__info-title">本商品為限制級商品</p>
+                <p class="adult-tips__info-desc">限18歲以上會員才可瀏覽</p>
+            </div>
+            <div class="adult-tips__button">
+                <button class="adult-tips__button-under-18">我未滿18歲</button>
+                <button class="adult-tips__button-over-18" onclick="over18()" >我已滿18歲</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <nav  class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/show_records/1" style="font-weight: 900;font-size: 32px; color: black;"><i class="fas fa-kiwi-bird" style="font-size:32px;/* font-weight: 900; */"></i>
+                    鳥鳥比價</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#categroy" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation" style="margin-right: 10px;margin-left: auto;">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#searchbarbar" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <img class="searchmenu"src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Search_font_awesome.svg">
+            </button>
+
+          <div style="display: none!important;" class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">最新商品</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">女性商品</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  男性用品
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">第一個分類</a></li>
+                  <li><a class="dropdown-item" href="#">第二個分類</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">第三個分類</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">各平台活動</a>
+              </li>
+            </ul>
+
+
+          </div>
+          <div id="searchbarbar" class="ccc">
+            <form class="d-flex" action="/search/1/" >
+              <input class="form-control me-2" name="q" type="search" placeholder="商品搜尋" aria-label="Search">
+              <button class="btn btn-outline-success search-component" type="submit">GO</button>
+            </form>
+         </div>
+        </div>
+      </nav>
+
+<main>
+
+    <div class='totalbar'>
+        <aside class="aside-cate  ">
+
+        <div class="container mt-3 ccc" id="categroy">
+            
+            <div style="text-align: center"><h2>商品分類</h2></div>
+            {% block catagory %}
+            <a href="/show_records/1" class="btn btn-primary categroy-name active">所有商品</a>
+
+            {% for i in catedata2.keys() %}
+        
+            <a href="/show_records/{{i}}/1" class="btn btn-primary categroy-name">{{catedata2[i]}}<a>
+
+            {% endfor %}
+            {% endblock catagory %}
+
+            <div style="display: none;">
+            <a href="#demo1" class="btn btn-primary collapsed categroy-name-outside" data-bs-toggle="collapse" aria-expanded="false">女性商品</a>
+            <div id="demo1" class="collapse" >
+                <a href="girl" class="btn btn-primary categroy-name">按摩棒</a>
+            </div>
+            <a href="#demo2" class="btn btn-primary collapsed categroy-name-outside" data-bs-toggle="collapse" aria-expanded="false">男性商品</a>
+            <div id="demo2" class="collapse" >
+                <a href="boy" class="btn btn-primary categroy-name">自慰杯</a>
+            </div>
+            </div>
+
+
+
+
+
+          </div>
+        </aside >
+          <div class="product-list">
+            {% block breadcrumb %}            
+            <div class="bread-bar">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page"><h1 style="width: 200px;font-size: 17px;margin-top: 3px;">所有商品</h1></li>
+                    </ol>
+                  </nav>
+            </div>
+            {% endblock breadcrumb %}
+
+
+            {% for b in aallprod %}
+            <div class="product" >
+                {% if b.total_dp == "Y" %}
+                <a class="link-ghost" href="{{b.dp_link}}" target="{{b.dp_pid}}" rel="nofollow" >
+                    <div class="product-image">
+                        <img loading="lazy" class="img" src="{{b.dp_img}}" alt="{{b.dp_name}}"   ></div>
+
+                    <div class="product-name">{{b.dp_name}}</div>
+
+                <table>
+                    <tr>
+                        <td><img loading="lazy" src="/public/img/dplogo.png" alt="dplogo" style="height: 25px ; padding-left:25px"  ></div></td>
+                        <td width="300px" ><div class="product-price">價格 :{{b.dp_price|int}}</div></td>
+                    </tr>
+                </table>
+                </a>
+                {% elif b.total_drq =="Y" %}
+
+                <a class="link-ghost" href="{{b.drq_link}}" target="{{b.drq_pid}}" rel="nofollow" >
+                    <div class="product-image">
+                        <img loading="lazy" class="img" src="{{b.drq_img}}" alt="{{b.drq_name}}"   ></div>
+
+                    <div class="product-name">{{b.drq_name}}</div>
+
+
+                <table>
+                    <tr>
+                        <td><img loading="lazy" src="/public/img/drqq.png" alt="drqlogo" style="height: 40px; padding-left:25px" ></div></td>
+                        <td width="300px" ><div class="product-price">價格 :{{b.drq_price|int}}</div></td>
+                    </tr>
+                </table>
+                </a>
+                {% elif b.total_ii =="Y" %}
+                <a class="link-ghost" href="{{b.ii_link}}" target="{{b.ii_pid}}" rel="nofollow" >
+                    <div class="product-image">
+                        <img loading="lazy" class="img" src="{{b.ii_img}}" alt="{{b.ii_name}}"   ></div>
+
+                    <div class="product-name">{{b.ii_name}}</div>
+
+                <table>
+                    <tr>
+                        <td><img loading="lazy" src="/public/img/lovesexbody.png" alt="iilogo" style="height: 44px; padding-left:25px"  ></div></td>
+                        <td width="300px" ><div class="product-price">價格 :{{b.ii_price|int}}</div></td>
+                    </tr>
+                </table>
+                 </a>
+                {% endif %}
+
+
+
+                {% if b.total_dp == "Y" and b.total_drq == "Y" %}
+                <a class="link-ghost" href="{{b.drq_link}}" target="{{b.drq_pid}}" rel="nofollow" >
+                    <div class="product-name">{{b.drq_name}}</div>
+
+
+                <table>
+                    <tr>
+                        <td><img loading="lazy" src="/public/img/drqq.png" alt="drqlogo" style="height: 40px; padding-left:25px" ></div></td>
+                        <td width="300px" ><div class="product-price">價格 :{{b.drq_price|int}}</div></td>
+                    </tr>
+                </table>
+                </a>
+                {% endif %}
+
+                {% if b.total_dp == "Y" and b.total_drq == "Y" and b.total_ii =="Y" %}
+                <a class="link-ghost" href="{{b.ii_link}}" target="{{b.ii_pid}}" rel="nofollow" >
+                    <div class="product-name">{{b.ii_name}}</div>
+
+
+                <table>
+                    <tr>
+                        <td><img loading="lazy" src="/public/img/lovesexbody.png" alt="iilogo" style="height: 44px; padding-left:25px"  ></div></td>
+                        <td width="300px" ><div class="product-price">價格 :{{b.ii_price|int}}</div></td>
+                    </tr>
+                </table>
+                  </a>
+                {% endif %}
+            </div>
+            {% endfor %}
+
+            {%block pagination%}
+            <div id="pagebar" class="product-list">
+                
+                <ul class="pagination">
+                    <li><a href="1">«</a></li>
+                {%for a in pagebar%}
+
+                    {% if a == pagenum %}
+                    <li><a class="active" href="{{a}}">{{a}}</a></li>
+                    {% else %}
+                    <li><a href="{{a}}">{{a}}</a></li>
+                    {% endif %}
+                {%endfor%}
+                    <li><a href="{{maxpagenum+1}}">»</a></li>
+                </ul>
+            </div>
+            {%endblock pagination%}
+          </div>
+
+
+    </div>
+
+
+
+
+
+
+</main>
+</body>
+
+</html>
